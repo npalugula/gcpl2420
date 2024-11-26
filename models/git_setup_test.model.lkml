@@ -226,7 +226,9 @@ explore: sindhu {
 
 explore: special_charaters {}
 
-explore: demo_db_temporary {}
+explore: demo_db_temporary {
+  #git push test
+}
 
 explore: ten_million_orders {
   join: orders {
