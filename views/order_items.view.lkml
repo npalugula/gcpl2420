@@ -19,10 +19,12 @@ view: order_items {
   }
   dimension: phone {
     type: string
+    hidden: yes
     sql: ${TABLE}.phone ;;
   }
   dimension: phones {
     type: string
+
     sql: ${TABLE}.phones ;;
   }
   dimension_group: returned {
@@ -35,7 +37,9 @@ view: order_items {
     sql: ${TABLE}.sale_price ;;
   }
   measure: count {
+
     type: count
+
     drill_fields: [id, orders.id, inventory_items.id]
   }
-}
+  }
